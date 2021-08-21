@@ -1,0 +1,34 @@
+{
+    "name": "ezadev/simplemde",
+    "description": "Simplemde markdown editor extension for ezadev",
+    "type": "library",
+    "keywords": ["ezadev", "extension", "markdown", "editor"],
+    "homepage": "https://github.com/ezadev/simplemde",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Khairu Aqsara",
+            "email": "khairu.aqsara@hotmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "ezadev/admin": "~0.6.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ezadev\\Simplemde\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ezadev\\Simplemde\\SimplemdeServiceProvider"
+            ]
+
+        }
+    }
+}
